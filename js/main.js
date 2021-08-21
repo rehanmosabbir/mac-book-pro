@@ -19,6 +19,20 @@ function getDeliveryCost() {
   return deliveryCostVal;
 }
 
+function getExtraStorageCost() {
+  const extraStorageCostEl = document.getElementById("extra-storage-cost");
+  const extraStorageCostText = extraStorageCostEl.innerText;
+  const extraStorageCostVal = parseInt(extraStorageCostText);
+  return extraStorageCostVal;
+}
+
+function getExtraMemoryCost() {
+  const extraMemoryCostEl = document.getElementById("extra-memory-cost");
+  const extraMemoryCostText = extraMemoryCostEl.innerText;
+  const extraMemoryCostVal = parseInt(extraMemoryCostText);
+  return extraMemoryCostVal;
+}
+
 document.getElementById("sixteen-gb-memory-btn").addEventListener("click", function () {
   // Extra Memory Cost Calculation
   const extraMemoryCostEl = document.getElementById("extra-memory-cost");
@@ -27,10 +41,7 @@ document.getElementById("sixteen-gb-memory-btn").addEventListener("click", funct
   extraMemoryCostEl.innerText = extraMemoryCostVal;
 
   // Extra Storage Cost Calculation
-  const extraStorageCostEl = document.getElementById("extra-storage-cost");
-  const extraStorageCostText = extraStorageCostEl.innerText;
-  const extraStorageCostVal = parseInt(extraStorageCostText);
-
+  const extraStorageCostVal = getExtraStorageCost();
   // Delivery Cost Calculation
   const deliveryCostVal = getDeliveryCost();
   // Best Price Calculation
@@ -49,9 +60,7 @@ document.getElementById("eight-gb-memory-btn").addEventListener("click", functio
   extraMemoryCostEl.innerText = extraMemoryCostVal;
 
   // Extra Storage Cost Calculation
-  const extraStorageCostEl = document.getElementById("extra-storage-cost");
-  const extraStorageCostText = extraStorageCostEl.innerText;
-  const extraStorageCostVal = parseInt(extraStorageCostText);
+  const extraStorageCostVal = getExtraStorageCost();
 
   // Delivery Cost Calculation
   const deliveryCostVal = getDeliveryCost();
@@ -66,10 +75,7 @@ document.getElementById("eight-gb-memory-btn").addEventListener("click", functio
 
 document.getElementById("two-hundred-fifty-six-storage-btn").addEventListener("click", function () {
   // Extra Memory Cost Calculation
-  const extraMemoryCostEl = document.getElementById("extra-memory-cost");
-  const extraMemoryCostText = extraMemoryCostEl.innerText;
-  const extraMemoryCostVal = parseInt(extraMemoryCostText);
-
+  const extraMemoryCostVal = getExtraMemoryCost();
   // Extra Storage Cost Calculation
   let extraStorageCostEl = document.getElementById("extra-storage-cost");
   extraStorageCostEl.innerText = 0;
@@ -90,9 +96,7 @@ document.getElementById("two-hundred-fifty-six-storage-btn").addEventListener("c
 
 document.getElementById("five-hundred-twelve-storage-btn").addEventListener("click", function () {
   // Extra Memory Cost Calculation
-  const extraMemoryCostEl = document.getElementById("extra-memory-cost");
-  const extraMemoryCostText = extraMemoryCostEl.innerText;
-  const extraMemoryCostVal = parseInt(extraMemoryCostText);
+  const extraMemoryCostVal = getExtraMemoryCost();
 
   // Delivery Cost Calculation
   const deliveryCostVal = getDeliveryCost();
@@ -110,9 +114,7 @@ document.getElementById("five-hundred-twelve-storage-btn").addEventListener("cli
 });
 document.getElementById("one-tb-storage-btn").addEventListener("click", function () {
   // Extra Memory Cost Calculation
-  const extraMemoryCostEl = document.getElementById("extra-memory-cost");
-  const extraMemoryCostText = extraMemoryCostEl.innerText;
-  const extraMemoryCostVal = parseInt(extraMemoryCostText);
+  const extraMemoryCostVal = getExtraMemoryCost();
   // Extra Storage Cost Calculation
   let extraStorageCostEl = document.getElementById("extra-storage-cost");
   extraStorageCostEl.innerText = 0;
@@ -137,13 +139,9 @@ document.getElementById("free-delivery-charge-btn").addEventListener("click", fu
   const deliveryCostVal = parseInt(deliveryCostText);
   deliveryCostEl.innerText = deliveryCostVal;
   // Extra Storage Cost Calculation
-  const extraStorageCostEl = document.getElementById("extra-storage-cost");
-  const extraStorageCostText = extraStorageCostEl.innerText;
-  const extraStorageCostVal = parseInt(extraStorageCostText);
+  const extraStorageCostVal = getExtraStorageCost();
   // Extra Memory Cost Calculation
-  const extraMemoryCostEl = document.getElementById("extra-memory-cost");
-  const extraMemoryCostText = extraMemoryCostEl.innerText;
-  const extraMemoryCostVal = parseInt(extraMemoryCostText);
+  const extraMemoryCostVal = getExtraMemoryCost();
   // Best Price Calculation
   const bestPriceVal = getBestPrice();
   // Total Price Calculation
@@ -157,13 +155,9 @@ document.getElementById("delivery-charge-btn").addEventListener("click", functio
   const deliveryCostVal = parseInt(deliveryCostText) + 20;
   deliveryCostEl.innerText = deliveryCostVal;
   // Extra Storage Cost Calculation
-  const extraStorageCostEl = document.getElementById("extra-storage-cost");
-  const extraStorageCostText = extraStorageCostEl.innerText;
-  const extraStorageCostVal = parseInt(extraStorageCostText);
+  const extraStorageCostVal = getExtraStorageCost();
   // Extra Memory Cost Calculation
-  const extraMemoryCostEl = document.getElementById("extra-memory-cost");
-  const extraMemoryCostText = extraMemoryCostEl.innerText;
-  const extraMemoryCostVal = parseInt(extraMemoryCostText);
+  const extraMemoryCostVal = getExtraMemoryCost();
   // Best Price Calculation
   const bestPriceVal = getBestPrice();
   // Total Price Calculation
