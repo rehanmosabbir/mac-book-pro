@@ -80,7 +80,8 @@ document.getElementById("five-hundred-twelve-storage-btn").addEventListener("cli
   const deliveryCostText = deliveryCostEl.innerText;
   const deliveryCostVal = parseInt(deliveryCostText);
 
-  const extraStorageCostEl = document.getElementById("extra-storage-cost");
+  let extraStorageCostEl = document.getElementById("extra-storage-cost");
+  extraStorageCostEl.innerText = 0;
   const extraStorageCostText = extraStorageCostEl.innerText;
   const extraStorageCostVal = parseInt(extraStorageCostText) + 100;
   extraStorageCostEl.innerText = extraStorageCostVal;
@@ -99,7 +100,8 @@ document.getElementById("one-tb-storage-btn").addEventListener("click", function
   const extraMemoryCostText = extraMemoryCostEl.innerText;
   const extraMemoryCostVal = parseInt(extraMemoryCostText);
 
-  const extraStorageCostEl = document.getElementById("extra-storage-cost");
+  let extraStorageCostEl = document.getElementById("extra-storage-cost");
+  extraStorageCostEl.innerText = 0;
   const extraStorageCostText = extraStorageCostEl.innerText;
   const extraStorageCostVal = parseInt(extraStorageCostText) + 180;
   extraStorageCostEl.innerText = extraStorageCostVal;
@@ -178,4 +180,5 @@ document.getElementById("apply-promo-btn").addEventListener("click", function ()
     const finalPrice = totalPriceFinalVal - discountAmount;
     totalPriceFinalEl.innerText = finalPrice;
   }
+  inputPromoCode.value = " ";
 });
