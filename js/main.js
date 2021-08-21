@@ -82,13 +82,10 @@ document.getElementById("two-hundred-fifty-six-storage-btn").addEventListener("c
   const extraStorageCostText = extraStorageCostEl.innerText;
   const extraStorageCostVal = parseInt(extraStorageCostText);
   extraStorageCostEl.innerText = extraStorageCostVal;
-
   // Delivery Cost Calculation
   const deliveryCostVal = getDeliveryCost();
-
   // Best Price Calculation
   const bestPriceVal = getBestPrice();
-
   // Total Price Calculation
   const totalPrice = extraStorageCostVal + bestPriceVal + extraMemoryCostVal + deliveryCostVal;
   updateTotalPrice(totalPrice);
@@ -97,7 +94,6 @@ document.getElementById("two-hundred-fifty-six-storage-btn").addEventListener("c
 document.getElementById("five-hundred-twelve-storage-btn").addEventListener("click", function () {
   // Extra Memory Cost Calculation
   const extraMemoryCostVal = getExtraMemoryCost();
-
   // Delivery Cost Calculation
   const deliveryCostVal = getDeliveryCost();
   // Extra Storage Cost Calculation
@@ -121,7 +117,6 @@ document.getElementById("one-tb-storage-btn").addEventListener("click", function
   const extraStorageCostText = extraStorageCostEl.innerText;
   const extraStorageCostVal = parseInt(extraStorageCostText) + 180;
   extraStorageCostEl.innerText = extraStorageCostVal;
-
   // Delivery Cost Calculation
   const deliveryCostVal = getDeliveryCost();
   // Best Price Calculation
