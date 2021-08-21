@@ -16,7 +16,74 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-5 px-5">
+          <img class="img-fluid" src="images/mac.png" alt="" />
+        </div>
+        <div class="col-md-7 px-4">
+          <h2>Customize your blue 24-inch i-Mac with Apple M1 Chip</h2>
+          <p>
+            Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16 core Neural Engine 8GB unified
+            Memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English
+          </p>
+          <div class="my-4">
+            <h6>Memory</h6>
+            <button class="btn btn-outline-primary">8GB unified memory</button>
+            <button id="sixteen-gb-memory-btn" class="btn btn-outline-primary">16GB unified memory</button>
+          </div>
+          <div class="my-4">
+            <h6>Storage</h6>
+            <button class="btn btn-outline-primary">256GB SSD storage</button>
+            <button id="five-hundred-twelve-storage-btn" class="btn btn-outline-primary">512GB SSD storage</button>
+            <button id="one-tb-storage-btn" class="btn btn-outline-primary">1TB SSD storage</button>
+          </div>
+          <div class="my-4">
+            <h6>Choose your delivery options</h6>
+            <button class="btn btn-outline-primary">Friday, August 25 FREE prime delivery</button>
+            <button id="delivery-charge-btn" class="btn btn-outline-primary">Friday, August 21 delivery charge $20</button>
+          </div>
+
+          <table class="table mb-4">
+            <tbody>
+              <tr>
+                <th>Best Price</th>
+                <th>$ <span id="best-price">1299</span></th>
+              </tr>
+              <tr>
+                <th>Extra Memory Cost</th>
+                <th>$<span id="extra-memory-cost">0</span></th>
+              </tr>
+              <tr>
+                <th>Extra Storage Cost</th>
+                <th>$ <span id="extra-storage-cost">0</span></th>
+              </tr>
+              <tr>
+                <th>Delivery Charge</th>
+                <th>$ <span id="delivery-charge">0</span></th>
+              </tr>
+
+              <tr>
+                <th>Total Price</th>
+                <th>$ <span id="total-price">1299</span></th>
+              </tr>
+            </tbody>
+          </table>
+
+          <h5>Add promo code</h5>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" name="" id="promo-code" class="form-control" />
+            </div>
+            <div class="col-md-4">
+              <button id="apply-promo-btn" type="button" class="btn btn-danger">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h2 class="text-center">Total: $ <span id="total-price-final">1299</span></h2>
+    </div>
     <!-- main js -->
     <script src="js/main.js"></script>
     <!-- Bootstrap js -->
